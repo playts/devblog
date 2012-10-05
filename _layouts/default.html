@@ -6,16 +6,16 @@
     <base href="{{ site.baseurl }}">
     <title>{{ page.title }}</title>
     <style type="text/css">
-    @import url(/themes/default/css/reset.css) all;
-    @import url(/themes/default/css/style.css) all;
+    @import url({{ site.baseurl }}/themes/default/css/reset.css) all;
+    @import url({{ site.baseurl }}/themes/default/css/style.css) all;
     </style>
-    <!--[if IE]><style type="text/css">@import url(/themes/default/css/ie.css) all;</style><![endif]-->
+    <!--[if IE]><style type="text/css">@import url({{ site.baseurl }}/themes/default/css/ie.css) all;</style><![endif]-->
 </head>
 <body>
 <div id="page">
 <div id="header">
 <div class="section">
-{% if page.id %}<div id="site-name"><strong><a href="/" title="Home">{{ site.title }}</a></strong></div>{% else %}<h1 id="site-name"><a href="/" title="Home">{{ site.title }}</a></h1>{% endif %}
+{% if page.id %}<div id="site-name"><strong><a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a></strong></div>{% else %}<h1 id="site-name"><a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a></h1>{% endif %}
 </div>
 </div>
 
