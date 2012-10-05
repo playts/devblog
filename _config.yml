@@ -59,6 +59,7 @@ lsi: false
 
 exclude: ["README.markdown", "*.txt"]
 
+baseurl: /devblog
 
 # 自定义标记
 themes: default
