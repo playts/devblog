@@ -1,0 +1,21 @@
+body {
+	/*
+	Fixes exaggerated text resizing in IE6 and IE7
+	 */
+font-size: 100%;
+}
+
+img {
+	/*
+	For IE.
+	http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+	 */
+-ms-interpolation-mode: bicubic;
+}
+
+li {
+	/*
+	For IE6 + IE7.
+	 */
+display: list-item;
+}

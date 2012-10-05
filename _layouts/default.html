@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="{{ site.author.name }}">
+    <title>{{ page.title }}</title>
+    <style type="text/css">
+    @import url(/themes/default/css/reset.css) all;
+    @import url(/themes/default/css/style.css) all;
+    </style>
+    <!--[if IE]><style type="text/css">@import url(/themes/default/css/ie.css) all;</style><![endif]-->
+</head>
+<body>
+<div id="page">
+<div id="header">
+<div class="section">
+{% if page.id %}<div id="site-name"><strong><a href="/" title="Home">{{ site.title }}</a></strong></div>{% else %}<h1 id="site-name"><a href="/" title="Home">{{ site.title }}</a></h1>{% endif %}
+</div>
+</div>
+
+<div id="main">
+<div class="section">
+{{ content }}
+</div>
+</div>
+
+<div id="footer">
+<div class="section">Copyright © Playts 2012</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+# 提示: ymal 只支持单行注释，既“#”
+###################################
+
+# 标记: auto
+# 功能描述: 自动再生文件 
+# 命令行可用参数: --no-auto --auto
+# 配置文件可用参数: auto: [boolean] 既 true 或 false
+# 默认值: false
+auto: true
+
+###################################
+
+# 标记: markdown
+# 功能描述: Markdown标记语言转换引擎
+# 命令行可用参数: --rdiscount 或 --kramdown 或 --redcarpet
+# 配置文件可用参数: markdown: [engine] rdiscount 或 kramdown 或 redcarpet
+# 默认值: maruku
+markdown: rdiscount
+
+###################################
+
+# 标记: pygments
+# 功能描述: 语法高亮
+# 命令行可用参数: --pygments
+# 配置文件可用参数: pygments: [boolean] 既 true 或 false
+# 默认值: false
+pygments: true
+
+###################################
+
+# 标记: permalink
+# 功能描述: 固定链接
+# 命令行可用参数: --permalink=[style] 集合参数有 date pretty none
+# 配置文件可用参数: 
+# date   = /:categories/:year/:month/:day/:title.html
+# pretty = /:categories/:year/:month/:day/:title/
+# none   = /:categories/:title.html
+# 可用变量 year month day title categories i_month i_day
+# 详见 https://github.com/mojombo/jekyll/wiki/Permalinks
+# 默认值: date
+permalink: pretty
+
+###################################
+
+# 标记: lsi
+# 功能描述: 生成相关帖子
+# 命令行可用参数: --lsi
+# 配置文件可用参数: lsi: [boolean] 既 true 或 false
+# 默认值: false
+lsi: false
+
+###################################
+
+# 标记: lsi
+# 功能描述: 排除文件或目录
+# 命令行可用参数: 无
+# 配置文件可用参数: exclude: [dir1, file1, dir2] 既 文件 或 目录
+# 默认值: 无
+
+exclude: ["README.markdown", "*.txt"]
+
+
+# 自定义标记
+themes: default
+title: playts
+author :
+  name : XuLong
+  email : playts@gmail.com
+

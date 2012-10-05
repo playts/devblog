@@ -1,0 +1,116 @@
+/*
+ * Links
+ *
+ * The order of link states are based on Eric Meyer's article: 
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+html {
+  height: 100%;
+}
+
+#page {
+  font-size: 0.875em;
+  line-height: 1.5em;
+}
+/*
+ * Links
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+a:link {
+  color: #408080;
+}
+
+a:visited {
+  color: #808080;
+}
+
+a:hover,
+a:focus {
+  color: #FF0000;
+}
+
+a:active {
+}
+b,strong {
+  /*
+  Makes browsers agree.
+  IE + Opera = font-weight:  bold.
+  Gecko + WebKit = font-weight:  bolder.
+   */
+font-weight: bold;
+}
+
+body {
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+}
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+blockquote {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+blockquote,q {
+  quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+  content: '';
+  content: none;
+}
+
+pre {
+  font-size: 1.1em;
+  margin: 1.364em 0;
+}
+
+pre,code,kbd,samp,tt,var {
+  /*font-family: "Courier New", "DejaVu Sans Mono", monospace;*/
+  font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace
+}
+
+hr {
+  height: 1px;
+  border: 1px solid #666;
+}
+
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,ul,ol,dl,hr {
+  margin: 1.5em 0;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin: 0.75em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin: 1.154em 0;
+}
+
+h4,h5,h6 {
+  font-size: 1.1em;
+  margin: 1.364em 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*ol,ul {
+  list-style: none;
+}
+*/
